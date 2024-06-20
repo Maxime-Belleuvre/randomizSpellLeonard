@@ -1,0 +1,138 @@
+:root {
+    font-size: 16px;
+    --smoky-black: #0A0903;
+    --amber: #FFC100;
+    --red: #FF0000;
+    --vanilla: #FFEAAE;
+    --ut-orange: #FF8200;
+    --white-85: rgba(255, 255, 255, .85);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+figure,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    background-color: rgba(69, 67, 67, 0.991);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    height: 100vh;
+    display: none !important;
+}
+article.active{
+    display: block !important;
+}
+.content-spells{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1%;
+}
+.card{
+    width: 330px;
+    height: 550px;
+    border: 0.3rem solid var(--smoky-black);
+    border-radius: 4px;
+    margin-bottom: 2%;
+    background-color: var(--white-85);
+}
+
+.header-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.3rem solid var(--smoky-black);
+    height: 83px;
+}
+
+.spell-img{
+    width: 25%;
+}
+
+.header-text{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.spell-name{
+    width: 50%;
+    height: 100%;
+    border-left: 0.3rem solid var(--smoky-black);
+    border-right: 0.3rem solid var(--smoky-black);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.spell-cost{
+    width:25%;
+}
+
+.body-card{
+    border-bottom: 0.3rem solid var(--smoky-black);
+    height:330px;
+    display: flex;
+    align-items: center;
+}
+.body-card-text{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.footer-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 121px;
+}
+
+.footer-card-text{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.manage-btn{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+.btn{
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--smoky-black);
+    color: var(--white-85);
+    padding: 20px 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color: #24210e;
+}

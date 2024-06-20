@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Sort Aléatoire</title>
+</head>
+<body>
+    <div class="manage-btn">
+        <button class="btn" id="spellMono">Sort monocible ( 20 sorts possibles )</button>
+        
+        <button class="btn" id="spellMulti">Sort multicible ( 10 sorts possibles )</button>
+        <button class="btn" id="spellGeneral">Sort général ( 32 sorts possibles )</button>
+    </div>
+    <article class="content-spells" id="cardContainer">
+        <div class="card">
+            <div class="header-card">
+                <img src="" alt="" class="spell-img" id="spellImg">
+                <div class="spell-name">
+                    <p class="header-text" id="hearderText"></p>
+                </div>
+                <p class="header-text spell-cost" id="cost"></p>
+            </div>
+            <div class="body-card">
+                <p class="body-card-text" id="description"></p>
+            </div>
+            <div class="footer-card">
+                <p class="footer-card-text" id="defense"></p>
+            </div>
+        </div>
+    </article>
+
+    <?php header("Content-type: application/JavaScript; charset=UTF-8"); ?>
+    <script src="js/script.js"></script>
+</body>
+</html>

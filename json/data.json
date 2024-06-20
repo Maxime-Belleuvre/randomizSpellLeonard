@@ -1,0 +1,299 @@
+{
+    "spells":[
+            {
+                "id": "1",
+                "title": "Infusion d'énergie",
+                "cost": "4",
+                "url": "infusionEnergie.png",
+                "description": " Pendant 1D10 tours, le lanceur subit une dégénération d'END de 1 par tour après le premier (non réductible) mais son arme inflige des dégâts supplémentaires équivalents à son score de VOL. Si cast su une ennemi pas prend un tour pour briser le sort. SD = 16.",
+                "defense": "Défense : Aucune",
+                "targets": "mono"
+            },
+            {
+                "id": "2",
+                "title": "Chaîne d'éclairs",
+                "cost": "12",
+                "url": "chaineEclair.png",
+                "description": "Inflige 3D6+12 dégâts à une cible et a 50% de chance de se scinder en 2 éclairs plus petits s'iltouche, qui infligent la moitié des dégâts théoriques à deux cibles proches, qui se scindent eux-même et infligent à deux cibles la moitié des dégâts précédents... et ainsi de suite jusqu'à leur disparition. Peut rebondir plusieurs fois sur les mêmes cibles. Ne différencie pas les alliés des ennemis.",
+                "defense": "Défense : Esquive",
+                "targets": "mono"
+            },
+            {
+                "id": "3",
+                "title": "Étreinte de l'hiver",
+                "cost": "8",
+                "url": "etreinteDeHiver.png",
+                "description": " Emprisonne la cible dans un linceul de glace qui la paralyse totalement pendant 1D3 tours.Chaque tour, la cible peut faire un test pour s'en sortir, contre le tirage initial du sort. Chaquetour, elle subit 1D3+2 dégâts bruts si elle reste coincée dans l'étreinte de l'hiver, a un malus autest de défense de -5 et a 50% de chance de se briser et subir 2D6+8 dégâts bruts lors d'unrenversement subit.",
+                "defense": "Défense : Physique (ou FORx2+ 1D10)",
+                "targets": "mono"
+            },
+            {
+                "id": "4",
+                "title": "Poing de pierre",
+                "cost": "4",
+                "url": "poingDePierre.png",
+                "description": " Inflige 1D6+4 dégâts à une cible et la renverse (passe 1 tour) si elle échoue un test de FORx2 + 1D10. Réduit l'armure de la cible de -3 pendant 1D3 tours (cumulable). Peut briser l'Étreinte de l'Hiver.",
+                "defense": "Défense : Normale",
+                "targets": "mono"
+            },
+            {
+                "id": "5",
+                "title": "Boule de feu",
+                "cost": "8",
+                "url": "bouleDeFeu.png",
+                "description": " Inflige 2D6+8 dégâts dans la zone, alliés et ennemis confondus. Les cibles touchées ont 75% de chance de s'embraser (DoT.5).",
+                "defense": "Défense : Esquive",
+                "targets": "multi"
+            },
+            {
+                "id": "6",
+                "title": "Régénération",
+                "cost": "8",
+                "url": "regeneration.png",
+                "description": " Soigne la cible de 1D6+4 PV. Si le soin est inférieur à 10, la différence est donnée à cet allié enpoints d'END. SD = 20. Ne peut pas soigner la cible au-delà des PV qu'elle avait en commençant le combat. Hors combat, l'efficacité est divisée par 2.",
+                "defense": "Défense : Aucune",
+                "targets": "mono"
+            },
+            {
+                "id": "7",
+                "title": "Aura héroïque",
+                "cost": "4",
+                "url": "auraHeroique.png",
+                "description": " Pendant 1D3+2 tours, entoure la cible d'un champs de force qui repousse les projectiles non-critiques reçus et qui accélère la vitesse des projectiles émis, les empêchant ainsi de manquer leur cible (sauf pour tirages inférieurs ou égaux à 14). SD = 16.",
+                "defense": "Défense : Aucune",
+                "targets": "mono"
+            },
+            {
+                "id": "8",
+                "title": "Glyphe paralysant",
+                "cost": "4",
+                "url": "glyphePara.png",
+                "description": " Pose un glyphe magique au sol qui piège les ennemis (ou alliés) qui y archent et les paralysetotalement pendant 1D6+6 minutes. Les attaques ne peuvent pas pénétrer cette zone. Le coût d'un Glyphe est augmenté de +4 s'il y en a déjà un de posé (cumulable).",
+                "defense": "Défense : Résistabce Magique",
+                "targets": "multi"
+            },
+            {
+                "id": "9",
+                "title": "Panache magique",
+                "cost": "4",
+                "url": "panacheMagique.png",
+                "description": " Génère une atmosphère magique dans une petite zone, qui accélère le regain naturel d'END et de PV de 50% pour toute créature s'y trouvant, durant 12h. SD = 16.",
+                "defense": "Défense : Aucune",
+                "targets": "multi"
+            },
+            {
+                "id": "10",
+                "title": "dissipation",
+                "cost": "4",
+                "url": "dissipation.png",
+                "description": " Dissipe tous les effets négatifs, magiques ou physiques, accablant une personne, un objet ou un lieu (réduit) (retire le Poison et la Brûlure). SD = 16.",
+                "targets": "multi"
+            },
+            {
+                "id": "11",
+                "title": "Drain d'énergie",
+                "cost": "4",
+                "url": "drainEnergie.png",
+                "description": " Tisse un lien pendant 1D3+2 tours avec la cible. À chaque fois que celle-ci ou le lanceur effectuent une action (hors défenses), le lanceur regagne 3 points d'END et la cible en perd autant.",
+                "defense": "Défense : Résistance magique",
+                "targets": "mono"
+            },
+            {
+                "id": "12",
+                "title": "Bombe vivante",
+                "cost": "8",
+                "url": "bombeVivante.png",
+                "description": " Maudit une cible, qui inflige 3D6+12 dégâts en zone autour d'elle si elle meurt durant le tour (y compris le prochain tour de jeu du lanceur). Les cibles environnante doivent faire un test d'Esquive avec un SD relatif au premier jet d'Incantation.",
+                "defense": "Défense : Résistance magique",
+                "targets": "mono"
+            },
+            {
+                "id": "13",
+                "title": "Choc d'énergie",
+                "cost": "12",
+                "url": "chocEnergie.png",
+                "description": " Invoque un rayon d'énergie qui inflige à la cible et aux entités alignées des dégâts équivalents à 2D6 + toute l'END restante du lanceur. Consomme toute l'END restante du lanceur. Ce dernier regagne autant d'END que la moitié des dégâts effectifs infligés à la cible initiale.",
+                "defense": "Défense : Résistance magique",
+                "targets": "multi"
+            },
+            {
+                "id": "14",
+                "title": "Onde mentale",
+                "cost": "8",
+                "url": "ondeMental.png",
+                "description": " Renverse toutes les cibles en zone autour du lanceur (passe 1 tour). Peut briser Étreinte de l'Hiver.",
+                "defense": "Défense : FORx2 + 1D10",
+                "targets": "multi"
+            },
+            {
+                "id": "15",
+                "title": "Faiblesse",
+                "cost": "8",
+                "url": "faiblesse.png",
+                "description": " Pendant 1D3+2 tours, la cible a un malus à tous ses jets physiques de -4 (-6 si critique) et ne peut plus faire de jet critique.",
+                "defense": "Défense : Résistance magique",
+                "targets": "mono"
+            },
+            {
+                "id": "16",
+                "title": "Mauvais oeil",
+                "cost": "12",
+                "url": "mauvaisOeil.png",
+                "description": " Pendant 1D3 tours, toutes les sources de dégâts ont +2 chances de critique (+3 si critique) contre la cible.",
+                "defense": "Défense : Résistance magique",
+                "targets": "mono"
+            },
+            {
+                "id": "17",
+                "title": "Sommeil",
+                "cost": "8",
+                "url": "sommeil.png",
+                "description": " Plonge la cible dans un profond sommeil, dont elle se réveille si elle subit la moindre attaque.Maintenir le sommeil coûte 2 points d'END par tour (ou par minute si hors combat) au-delà du troisième tour (sans besoin de relancer la compétence). Si les conditions le permettent (voir avec MJ) la prochaine attaque portée à une cible endormie est un critique obligatoire.",
+                "defense": "Défense : Résistance magique",
+                "targets": "mono"
+            },
+            {
+                "id": "18",
+                "title": "Drain de vie",
+                "cost": "4",
+                "url": "drainDeVie.png",
+                "description": " Le lanceur se lie à la cible pendant 1D3+2 tours et lui vole 1D6 PV (dégâts bruts) à chaque début de tour.",
+                "defense": "Défense : Résistance magique",
+                "targets": "mono"
+            },
+            {
+                "id": "19",
+                "title": "Nuage mortel",
+                "cost": "12",
+                "url": "nuageMortel.png",
+                "description": " Provoque une explosion de magie noire dans la zone qui inflige à toutes les cibles 1D6+4 dégâts ainsi que 2 charges d'Empoisonnement (soumises à 1 test de Résilience chacune). Chaque cible sous 50% de ses PV subit à la place 3D6+4 dégâts ainsi 4 dégâts supplémentaires pour chaque charge d'altération (Saignement / Empoisonnement / Brûlure) dont elle est victime. Les alliés subissent aussi 4 dégâts par charge d'altération.",
+                "defense": "Défense : Résistance magique",
+                "targets": "multi"
+            },
+            {
+                "id": "20",
+                "title": "Sacrifice sanglant",
+                "cost": "4",
+                "url": "sacrificeSanglant.png",
+                "description": " Prélève 1D6 PV à la cible pour rendre autant au lanceur en PV et en END. SD = 16. Le critique double les valeurs récupérées mais n'augmente pas la quantité prélevée. Après un Sacrifice Sanglant réussit, le prochain sort (1) peut se lancer avec des PV au lieu de l'END (au choix).",
+                "defense": "Défense : Aucune",
+                "targets": "mono"
+            },
+            {
+                "id": "21",
+                "title": "Contrôle du sang",
+                "cost": "12",
+                "url": "controleDuSang.png",
+                "description": " Maudit une cible, qui doit se défendre 3 fois contre le même jet de Contrôle du Sang. Chaque fois qu'elle réussit à se défendre, elle subit 1D6+4 dégâts (qui pénètrent 50% de l'armure), mais dès qu'elle échoue, le lanceur en prend le contrôle durant 1D3 tours.",
+                "defense": "Défense : Résistance magique",
+                "targets": "mono"
+            },
+            {
+                "id": "21",
+                "title": "Soin de groupe",
+                "cost": "12",
+                "url": "SoinDeGroupe.png",
+                "description": " Le lanceur et tous les personnes dans le combat visibles regagnent 2D6 PV. SD = 24. Ne peut pas soigner les cibles au-delà des PV qu'elles avaient en commençant le combat. Hors combat, l'efficacité est divisée par 2.",
+                "defense": "Défense : aucune",
+                "targets": "multi"
+            },
+            {
+                "id": "22",
+                "title": "Ange gardien",
+                "cost": "8",
+                "url": "angeGardien.png",
+                "description": " La cible reçoit pendant 1D3+2 tours un enchantement qui lui rend 2D6+8 PV s'il descend en dessous de 20% de ses PV max sans mourir. SD = 20. Tout le temps que l'enchantement n'est pas déclenché, la cible a un bonus d'armure de +4.",
+                "defense": "Défense : aucune",
+                "targets": "mono"
+            },
+            {
+                "id": "23",
+                "title": "Télépathie",
+                "cost": "4",
+                "url": "telepathie.png",
+                "description": " Permet de communiquer en pensée avec un allié (un seul à la fois, relancer le sort pour changer de cible). SD = 16. Sur un ennemi, cela peut permettre de lire ses pensées brièvement s'il échoue un test de Résistance Magique.",
+                "defense": "Défense : Résistance magique",
+                "targets": "mono"
+            },
+            {
+                "id": "24",
+                "title": "Enracinement",
+                "cost": "4",
+                "url": "enracinement.png",
+                "description": " De puissantes racines poussent presque instantannément sous la cible, lui emprisonnant les jambes, ce qui l'empêche de se déplacer durant 1D3 tours. À chacun de ses tours, la cible peut faire un test de Physique pour se libérer (prend 1 action), contre l'incantation initiale du sort. Provoque un malus à la défense de -4 durant l'enracinement.",
+                "defense": "Défense : Esquive",
+                "targets": "mono"
+            },
+            {
+                "id": "25",
+                "title": "Maîtrise élémentaire",
+                "cost": "8",
+                "url": "maitriseElementaire.png",
+                "description": " Permet d'annuler complètement la météo ainsi que les température trop froides ou trop chaudes autour du lanceur durant 1D6 heures. SD = 20. La zone se déplace avec le lanceur.",
+                "defense": "Défense : Aucune",
+                "targets": "multi"
+            },
+            {
+                "id": "26",
+                "title": "Lévitation",
+                "cost": "8",
+                "url": "levitation.png",
+                "description": " Permet de manipuler à distance un objet ou une personne (maximum : VOL*10 kg). SD = 20.",
+                "defense": "Défense : Aucune",
+                "targets": "mono"
+            },
+            {
+                "id": "27",
+                "title": "Air frais",
+                "cost": "4",
+                "url": "airFrais.png",
+                "description": " Invoque une bulle d'air pur autour de la cible, qui dure 1D6+VOL minutes et se déplace avec lui. SD = 16.",
+                "defense": "Défense : Aucune",
+                "targets": "mono"
+            },
+            {
+                "id": "28",
+                "title": "Phare éthéré",
+                "cost": "4",
+                "url": "phare.png",
+                "description": " Invoque une forte lumière dans la main du lanceur ou au bout de son arme, qui dure 2D6*VOL minutes. SD = 16.",
+                "defense": "Défense : Aucune",
+                "targets": "null"
+            },
+            {
+                "id": "29",
+                "title": "Brouillard",
+                "cost": "8",
+                "url": "brouillard.png",
+                "description": " Invoque un épais brouillard dans une très grande zone autour du lanceur durant 1D6*30 minutes. Augmente de +5 la Discrétion de toutes les créatures s'y trouvant et réduit de -5 leur Vigilance et leur Orientation. SD = 20.",
+                "defense": "Défense : Aucune",
+                "targets": "multi"
+            },
+            {
+                "id": "30",
+                "title": "Répulsion des eaux",
+                "cost": "12",
+                "url": "repulsionEau.png",
+                "description": " Invoque une bulle d'énergie répulsive autour du lanceur. Elle se déplace avec lui et permet de repousser l'eau, pour marcher au fond du lit d'une rivière par ex. SD = 24. La bulle dure 1D6+VOL minutes.",
+                "defense": "Défense : Aucune",
+                "targets": "mono"
+            },
+            {
+                "id": "31",
+                "title": "Vision surnaturelle",
+                "cost": "8",
+                "url": "visionSurnaurelle.png",
+                "description": " Pendant 1D6+VOL minutes, permet au lanceur de voir sans aucune restriction toutes les formes de vie autour de lui, qui apparaissent comme des petits halos de lumière. Permet également de voir les fantômes et tout ce qui est invisible normalement. SD = 20.",
+                "defense": "Défense : aucune",
+                "targets": "null"
+            },
+            {
+                "id": "32",
+                "title": "Téléportation",
+                "cost": "12",
+                "url": "teleportation.png",
+                "description": " Le lanceur est téléporté à 1D6 km de sa destination.",
+                "defense": "Défense : aucune",
+                "targets": "null"
+            }
+    ]}
