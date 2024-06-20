@@ -13,7 +13,7 @@ function getSpells(url){
 getSpells("./json/data.json")
 
 function modifyImgSpells(url){
-    document.getElementById("spellImg").src=`https://maxime-belleuvre.github.io/images/${url}`
+    document.getElementById("spellImg").src=`https://maxime-belleuvre.github.io/randomizSpellLeonard/images/${url}`
 }
 function modifyNameSpells(e){
     document.getElementById("hearderText").textContent = e;
